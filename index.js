@@ -11,8 +11,8 @@ dotenv.config();
 const port = process.env.RACS_PORT || 7007
 
 receiver()
-// rabbitmq()
+
 app.listen(port, async () => {
-  console.log(`Listening to port ${port}.......`)
+  logger.info(`Listening to port ${port}.......`)
 })
 
