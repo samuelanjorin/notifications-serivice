@@ -16,7 +16,6 @@ let queueName =process.env.QUEUE_NAME
         return channel.assertQueue(queueName).then(function(ok) {
           return channel.consume(queueName, function(msg) {
             if (msg !== null) {
-              console.log(msg.content.toString());
               let content = JSON.parse(msg.content)
               if( content.notification_type === constants.NOTIFICATION_TYPE.email ){
                  sendEmail(content.payload)
