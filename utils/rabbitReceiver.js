@@ -16,9 +16,9 @@ let queueName =process.env.QUEUE_NAME
         return channel.assertQueue(queueName).then(function(ok) {
           return channel.consume(queueName, function(msg) {
             if (msg !== null) {
-              let content = JSON.parse(msg.content)
+              let content = JSON.parse(JSON.parse(msg.content))
               if( content.notification_type === constants.NOTIFICATION_TYPE.email ){
-                 sendEmail(content.payload)
+                  sendEmail(content.payload)
               }
              
               channel.ack(msg);
