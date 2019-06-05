@@ -15,4 +15,9 @@ receiver()
 app.listen(port, async () => {
   logger.info(`Listening to port ${port}.......`)
 })
-
+process.on('uncaughtException', (ex) => {
+  logger.error(ex.message)
+})
+process.on('unhandledRejection', (ex) => {
+ logger.error(ex.message)
+})
