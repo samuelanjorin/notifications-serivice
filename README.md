@@ -2,9 +2,6 @@
 
 This is on one the services of Turing Eccomerce Microservices. 
 
-E.G: Order Service sends this sample payload to the notification service to send order creation email to the customer.
-The notification service receives this sample payoad and sends the notification depending on the notification type.
-Currently, only email notification have been developed but more features like SMS and push notification can be added to this service
 
 # Deployed on Port http://3.130.189.86:7007
 
@@ -24,6 +21,9 @@ Message for format/PayLoad for EMAIL Notification:
     }
 }
 ```
+E.G: Order Service sends this sample payload to the notification service to send order creation email to the customer.
+The notification service receives this sample payoad and sends the notification depending on the notification type.
+Currently, only email notification have been developed but more features like SMS and push notification can be added to this service
 
 
 
