@@ -1,6 +1,6 @@
 # turing-notifications-serivice
 
-This is on one the services of Turing Eccomerce Microservices. 
+This is the notificaton-service of Turing Eccomerce Microservices.
 
 This services consumes messages from Rabbit MQ then send the appropraite notification
 
