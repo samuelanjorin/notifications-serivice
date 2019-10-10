@@ -2,9 +2,6 @@
 
 This is on one the services of Turing Eccomerce Microservices. 
 
-
-# Deployed on Port http://3.130.189.86:7007
-
 This services consumes messages from Rabbit MQ then send the appropraite notification
 
 Message for format/PayLoad for EMAIL Notification:
